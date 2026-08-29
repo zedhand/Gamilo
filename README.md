@@ -2,6 +2,17 @@
 
 **The hardest-working hire you'll ever make — and the only one who doesn't need a paycheck.**
 
+📖 **[Full User Guide](USER_GUIDE.md)** — every feature explained, plus troubleshooting tips.
+🔒 **[Privacy Policy](PRIVACY.md)** · 📄 **[Terms of Service](TERMS.md)**
+
+## Installing on a device
+
+This app isn't distributed through the Play Store, so Android will block the install by default. To sideload it:
+
+1. On the Android device, go to **Settings → Security** (or **Apps → Special app access → Install unknown apps**, depending on Android version) and enable **Install unknown apps** for whichever app you're using to transfer the APK (Files, Chrome, ADB, etc.).
+2. Install the APK.
+3. **Turn that setting back off once the install finishes.** Leaving "install from unknown sources" enabled is a standing security risk — it lets *any* app with that permission install further APKs without another prompt.
+
 ## We'd like to introduce your newest employee
 
 You've got a handyman business. You're the owner, the estimator, the bookkeeper,
