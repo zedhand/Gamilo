@@ -1,6 +1,6 @@
 # Gamilo User Guide
 
-Gamilo is an **air-gapped** business assistant for solo handyman operators. Everything below runs entirely on your device — no accounts, no network calls, no cloud sync. See [PRIVACY.md](PRIVACY.md) for what that means in detail.
+Gamilo is an **air-gapped** business assistant for anyone running a self-owned business or side hustle — contractors, freelancers, consultants, small sellers, or any other solo operator. Everything below runs entirely on your device — no accounts, no network calls, no cloud sync. See [PRIVACY.md](PRIVACY.md) for what that means in detail.
 
 ## Contents
 

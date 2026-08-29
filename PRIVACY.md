@@ -2,7 +2,7 @@
 
 _Last updated: 2026-08-29_
 
-Gamilo is an **air-gapped, offline-first** business assistant for solo handyman operators. This policy is short because the app does very little with your data — it doesn't send it anywhere.
+Gamilo is an **air-gapped, offline-first** business assistant for anyone running a self-owned business or side hustle. This policy is short because the app does very little with your data — it doesn't send it anywhere.
 
 ## What Gamilo stores
 

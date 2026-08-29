@@ -15,10 +15,11 @@ This app isn't distributed through the Play Store, so Android will block the ins
 
 ## We'd like to introduce your newest employee
 
-You've got a handyman business. You're the owner, the estimator, the bookkeeper,
-the dispatcher, the driver, and — somewhere in there — the guy who actually
-fixes things. You're doing the job of five people, and only one of you is
-getting paid.
+You run your own thing — a business, a side hustle, a one-person operation
+that answers to nobody but you. Which also means you're the owner, the
+estimator, the bookkeeper, the dispatcher, and the one actually doing the
+work. You're doing the job of five people, and only one of you is getting
+paid.
 
 **Gamilo is the other four.**
 
@@ -37,46 +38,51 @@ Here's what you're actually paying for when you "hire" the competition:
 | Someone to chase down that shoebox of receipts every April | Your sanity | $0 |
 
 Gamilo doesn't cost a salary. It doesn't cost a subscription. It doesn't even
-cost you an internet connection — it works from a job site with zero bars,
-because it was built to.
+cost you an internet connection — it works with zero bars, on a job site, in
+a client's basement, on a plane, wherever, because it was built to.
+
+Whether you're a contractor, a freelancer, a consultant, a tutor, an Etsy
+seller, or running any other one-person operation on the side or full-time —
+if you've got clients, jobs, expenses, and hours to keep straight, this is
+built for you.
 
 ## What Gamilo actually does for you
 
 **📋 Jobs & Clients** — Every job lives in one place: who it's for, what
 you're doing, and where it stands. No more digging through text threads to
-remember what you quoted Mrs. Kowalski for the deck repair.
+remember what you quoted a client last month.
 
-**🎙️ Voice Log — just talk to it** — Standing in a client's driveway with
-grease on your hands? Tap one button and say *"New job for Jane Smith to
-replace the kitchen faucet."* Gamilo transcribes it, figures out the client
-and the job, and hands it back for a one-tap confirm. No typing, no app
-fumbling, no lost jobs because you meant to write it down later and forgot.
-This runs entirely on your phone — the audio never leaves the device.
+**🎙️ Voice Log — just talk to it** — Hands full, or just don't feel like
+typing? Tap one button and say *"New job for Jane Smith to redesign her
+website."* Gamilo transcribes it, figures out the client and the job, and
+hands it back for a one-tap confirm. No typing, no app fumbling, no lost jobs
+because you meant to write it down later and forgot. This runs entirely on
+your phone — the audio never leaves the device.
 
 **⏱️ Hours** — Punch in, punch out, right from the home screen. A live
-notification tracks your shift so you're never guessing how long you were
-actually on-site when it's time to invoice.
+notification tracks your session so you're never guessing how long you
+actually worked when it's time to invoice.
 
 **💰 Expenses** — Snap a photo of the receipt, log the cost, tag the job.
 Done. Every dollar is tied to the job it belongs to, automatically converted
 and frozen at the exchange rate on the day you spent it — so your books never
 shift under you months later.
 
-**🚗 Mileage** — Log every trip between the shop and the job site. It adds up
-faster than you think, and it's deductible.
+**🚗 Mileage** — Log every trip you make for the business. It adds up faster
+than you think, and it's deductible.
 
 **📦 Shipping & Logistics** — Scan a shipping label with your camera and
 Gamilo reads the carrier and tracking number off it automatically — no
-retyping 22 digits with cold fingers. One tap to copy a tracking link
-straight to a client text.
+retyping 22 digits by hand. One tap to copy a tracking link straight to a
+client text.
 
 **📅 Calendar & Appointments** — Book the appointment the moment you make it,
-link it to the job, and never double-book a Tuesday morning again.
+link it to the job, and never double-book yourself again.
 
 **🔍 One filter bar, every tab** — Filter everything — hours, expenses,
 mileage, shipments — by job or by date range, sitting right at the top of
-every screen. Want to know what last week cost you on the Kowalski job? Two
-taps.
+every screen. Want to know what last week cost you on one specific client?
+Two taps.
 
 **📊 Export everything, anytime** — One button generates a complete CSV of
 every job, hour, expense, mile, and shipment — ready to hand to your
@@ -99,10 +105,9 @@ accountant or drop into a spreadsheet. Your data, your format, no lock-in.
 ## Built to survive a real workday
 
 Nine visual themes — from a construction-site high-vis look to a clean
-drafting-table light mode — so it's readable whether you're in a dim
-basement or on a job site in full sun. Sharp corners, hard borders, no fussy
-animations: information you can read at a glance with one dirty glove still
-on.
+drafting-table light mode — so it's readable whether you're hunched over a
+laptop at midnight or checking your phone in full sun. Sharp corners, hard
+borders, no fussy animations: information you can read at a glance.
 
 ---
 

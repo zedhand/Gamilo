@@ -8,7 +8,7 @@ By installing and using Gamilo, you agree to these terms.
 
 ## What Gamilo is
 
-Gamilo is a local, offline business-management tool for solo handyman operators: job tracking, task management, hours/shift tracking, expenses, mileage, shipping/logistics, and appointment scheduling. It runs entirely on your device — see [PRIVACY.md](PRIVACY.md) for what that means for your data.
+Gamilo is a local, offline business-management tool for anyone running a self-owned business or side hustle: job tracking, task management, hours/shift tracking, expenses, mileage, shipping/logistics, and appointment scheduling. It runs entirely on your device — see [PRIVACY.md](PRIVACY.md) for what that means for your data.
 
 ## No warranty
 
