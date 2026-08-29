@@ -1,0 +1,24 @@
+*.iml
+.gradle/
+.kotlin/
+/local.properties
+.idea/
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+
+app/build/
+
+# Local Claude Code session config — machine-specific, not part of the app
+.claude/
+
+# Release signing secrets — NEVER commit these. Losing the keystore means
+# future releases can't be signed to match past installs; back it up
+# somewhere safe outside this repo (a password manager, encrypted drive).
+keystore.properties
+app/*.jks
+app/*.keystore
+PROGRESS.md
