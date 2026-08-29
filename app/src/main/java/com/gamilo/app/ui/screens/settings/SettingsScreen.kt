@@ -32,6 +32,7 @@ import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.gamilo.app.BuildConfig
 import com.gamilo.app.data.model.Region
 import com.gamilo.app.settings.GamiloSettings
 import com.gamilo.app.ui.components.BorderedTextField
@@ -184,6 +185,15 @@ fun SettingsScreen(viewModel: SettingsViewModel, onRequestFactoryResetAuth: (onA
                     fontSize = 11.sp,
                 )
             }
+        }
+
+        item { SectionLabel("About") }
+        item {
+            Text(
+                text = "Gamilo ${BuildConfig.VERSION_NAME}",
+                color = GamiloColors.TextSecondary,
+                fontSize = 12.sp,
+            )
         }
     }
 }

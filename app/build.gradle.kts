@@ -27,7 +27,10 @@ android {
         minSdk = 26
         targetSdk = 37
         versionCode = 1
-        versionName = "0.1.0"
+        // "-beta" suffix is deliberate: Phase 1/2/5 features are all built and tested, but this
+        // hasn't been through real-world/multi-user usage yet. Bump to a plain "1.0.0" only once
+        // Dez is confident enough in it to drop that qualifier.
+        versionName = "1.0.0-beta.1"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -123,8 +126,10 @@ dependencies {
 
     // Encrypted-at-rest Room DB: SQLCipher pages are ciphertext on disk, so a raw file copy
     // (backups, SAF export) is safe without any extra encryption step. The passphrase itself
-    // is never stored in plaintext — see security/DbKeyManager.kt.
-    implementation("net.zetetic:android-database-sqlcipher:4.5.4")
+    // is never stored in plaintext — see security/DbKeyManager.kt. Uses the actively-maintained
+    // sqlcipher-android library (not the deprecated android-database-sqlcipher) since only this
+    // one supports 16KB page-size-aligned native libraries, required for Play Store submission.
+    implementation("net.zetetic:sqlcipher-android:4.18.0")
     implementation("androidx.sqlite:sqlite:2.7.0")
 
     // Bundled (not "unbundled") model — the recognizer ships inside the APK and runs fully
@@ -133,10 +138,13 @@ dependencies {
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.11.0")
 
     // Voice log: bundled Whisper tiny.en model (~42MB assets, see app/src/main/assets/models/),
-    // driven with plain ByteBuffers rather than tensorflow-lite-support — that artifact's 0.5.0
-    // pulls in com.google.ai.edge.litert:litert-support, which collides on the
-    // "org.tensorflow.lite.support" manifest namespace with litert-support-api and fails manifest merge.
-    implementation("org.tensorflow:tensorflow-lite:2.17.0")
+    // driven with plain ByteBuffers. Depends directly on LiteRT (TensorFlow Lite's actively
+    // maintained successor, same org.tensorflow.lite.* API surface) rather than the legacy
+    // org.tensorflow:tensorflow-lite artifact, which only transitively pulled in an old,
+    // non-16KB-page-aligned LiteRT build — Google Play requires 16KB page size support.
+    // Deliberately NOT litert-support: that artifact's manifest collides with ML Kit's own
+    // litert-support-api on the "org.tensorflow.lite.support" namespace and fails manifest merge.
+    implementation("com.google.ai.edge.litert:litert:1.4.2")
 
     implementation(platform("androidx.compose:compose-bom:2026.08.00"))
     implementation("androidx.compose.foundation:foundation")

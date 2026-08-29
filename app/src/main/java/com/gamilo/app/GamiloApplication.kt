@@ -10,7 +10,6 @@ import com.gamilo.app.backup.DailyBackupWorker
 import com.gamilo.app.di.AppContainer
 import com.gamilo.app.timer.NotificationChannels
 import java.util.concurrent.TimeUnit
-import net.sqlcipher.database.SQLiteDatabase
 
 class GamiloApplication : Application() {
 
@@ -29,9 +28,11 @@ class GamiloApplication : Application() {
 
     override fun onCreate() {
         super.onCreate()
-        // Loads the native libsqlcipher.so — needed before any SupportFactory/SQLiteDatabase
-        // use, but doesn't touch the encrypted file itself, so it's safe before unlock.
-        SQLiteDatabase.loadLibs(this)
+        // Loads the native libsqlcipher.so — needed before any SupportOpenHelperFactory/
+        // SQLiteDatabase use, but doesn't touch the encrypted file itself, so it's safe before
+        // unlock. sqlcipher-android (unlike the old android-database-sqlcipher) loads via a
+        // plain System.loadLibrary call rather than a Context-requiring static helper.
+        System.loadLibrary("sqlcipher")
         NotificationChannels.ensureCreated(this)
         scheduleDailyBackup()
     }

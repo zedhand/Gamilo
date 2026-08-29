@@ -2,6 +2,10 @@
 
 **The hardest-working hire you'll ever make — and the only one who doesn't need a paycheck.**
 
+> 🚧 **Beta.** Every feature described below is built and tested, but this hasn't been through
+> real-world, day-to-day use yet. Back up anything important (Settings → Export Backup) and
+> expect the occasional rough edge.
+
 📖 **[Full User Guide](USER_GUIDE.md)** — every feature explained, plus troubleshooting tips.
 🔒 **[Privacy Policy](PRIVACY.md)** · 📄 **[Terms of Service](TERMS.md)**
 

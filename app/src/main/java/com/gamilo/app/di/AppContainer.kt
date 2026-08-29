@@ -17,7 +17,7 @@ import com.gamilo.app.data.repo.ShippingRepository
 import com.gamilo.app.data.repo.TaskRepository
 import com.gamilo.app.export.DataExportService
 import com.gamilo.app.settings.SettingsStore
-import net.sqlcipher.database.SupportFactory
+import net.zetetic.database.sqlcipher.SupportOpenHelperFactory
 
 private val Context.dataStore by preferencesDataStore(name = "gamilo_settings")
 
@@ -38,7 +38,7 @@ class AppContainer(context: Context, passphrase: ByteArray, val clock: Clock = S
         GamiloDatabase::class.java,
         GamiloDatabase.DATABASE_NAME,
     )
-        .openHelperFactory(SupportFactory(passphrase))
+        .openHelperFactory(SupportOpenHelperFactory(passphrase))
         // No release has ever shipped (Stage 6 is still pending) — there's no real user data
         // anywhere to preserve across a schema bump yet, so a destructive fallback is safe.
         // Revisit this the moment Stage 6 ships a real Migration path becomes mandatory.
