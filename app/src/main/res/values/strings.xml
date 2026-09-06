@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Gamilo</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_tasks">Tasks</string>
+    <string name="nav_hours">Hours</string>
+    <string name="nav_expenses">Expenses</string>
+    <string name="nav_mileage">Mileage</string>
+    <string name="nav_logistics">Shipping</string>
+</resources>

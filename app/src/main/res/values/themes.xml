@@ -1,0 +1,17 @@
+<resources>
+    <style name="Theme.Gamilo" parent="android:Theme.Material.NoActionBar" />
+
+    <!--
+        Android 12+ Splash Screen API. Set as MainActivity's manifest theme; MainActivity
+        calls installSplashScreen() before super.onCreate(), which hands the window back to
+        Theme.Gamilo automatically once the first frame draws. No animated-icon-background
+        chip (windowSplashScreenAnimatedIconBackgroundColor) — the foreground vector already
+        fills its own shape, and a circular chip would clash with the sharp-cornered
+        Precision Utility look used everywhere else in the app.
+    -->
+    <style name="Theme.Gamilo.Starting" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/splash_background</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_launcher_foreground</item>
+        <item name="postSplashScreenTheme">@style/Theme.Gamilo</item>
+    </style>
+</resources>
